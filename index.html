@@ -1,125 +1,77 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="cs">
-  <head>
-    <meta charset="UTF-8" />
-    <title>OBI Nabídky</title>
-  </head>
-  <body>
-    <header class="header">
-      <div class="header-top">
-        <div class="logo">
-          <h1 class="logo-text">OBI</h1>
+<head>
+    <meta charset="UTF-8">
+    <title>OBI nabídky</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="header">
+    <div class="header-top">
+        <h1 class="logo">OBI</h1>
+
+        <div class="search">
+            <input type="text" placeholder="Co hledáte?">
+            <button>🔍</button>
         </div>
 
-        <div class="store-select">
-          <span class="store-label">Moje prodejna</span>
-          <a href="#" class="store-link">Vyberte, prosím</a>
+        <div class="icons">
+            <span>👤</span>
+            <span>🛒</span>
         </div>
+    </div>
 
-        <div class="search-bar">
-          <input type="text" class="search-input" placeholder="Co hledáte?" />
-          <button class="search-button">🔍</button>
-        </div>
+    <nav class="nav">
+        <a href="#">Kategorie</a>
+        <a href="#">Nabídky</a>
+        <a href="#">Magazín</a>
+        <a href="#">Kariéra</a>
+    </nav>
+</header>
 
-        <div class="header-actions">
-          <div class="action-item login">
-            <span class="action-icon">👤</span>
-            <span class="action-text">Přihlášení</span>
-          </div>
-          <div class="action-item cart">
-            <span class="action-icon">🛒</span>
-            <span class="action-text">Košík</span>
-          </div>
-        </div>
-      </div>
+<main class="main">
 
-      <nav class="main-nav">
-        <div class="burger-menu">☰</div>
-        <ul class="nav-list">
-          <li class="nav-item">
-            <a href="#" class="nav-link">VŠECHNY KATEGORIE</a>
-          </li>
-          <li class="nav-item"><a href="#" class="nav-link">NABÍDKY</a></li>
-          <li class="nav-item"><a href="#" class="nav-link">MAGAZÍN</a></li>
-          <li class="nav-item"><a href="#" class="nav-link">KARIÉRA</a></li>
-        </ul>
-      </nav>
-    </header>
+    <h2>Bobří síla v akci</h2>
 
-    <main class="main-content">
-      <section class="section-offers">
-        <h2 class="section-title">Bobří síla v akci</h2>
+    <div class="offers">
 
-        <div class="offers-container">
-          <div class="products-wrapper">
-            <div class="product-card">
-              <div class="product-image">
-                <img src="img1.jpg" alt="" />
-              </div>
-              <div class="product-info">
-                <p class="product-name">
-                  Decoflooring Vinylová podlaha SPC+IXPE dlažba Udine béžová
-                </p>
-                <div class="product-price-box">
-                  <span class="product-price">499,- Kč / m²</span>
+        <div class="products">
+
+            <div class="card">
+                <img src="assets/image.webp" alt="">
+                <div class="card-info">
+                    <p>Vinylová podlaha</p>
+                    <strong>499 Kč / m²</strong>
                 </div>
-              </div>
             </div>
 
-            <div class="product-card">
-              <div class="product-image">
-                <img src="img2.jpg" alt="" />
-              </div>
-              <div class="product-info">
-                <p class="product-name">Cemix 4400 Štuk vnitřní jemný 25 kg</p>
-                <div class="product-rating">
-                  <span class="stars">★★★★☆</span>
+            <div class="card">
+                <img src="assets/Cemix_stukvnitrni_116394_1.webp" alt="">
+                <div class="card-info">
+                    <p>Štuk 25 kg</p>
+                    <strong>129 Kč</strong>
                 </div>
-                <div class="product-discount">
-                  <span class="discount-badge">-7%</span>
-                  <span class="old-price">139,- Kč</span>
-                </div>
-                <div class="product-price-box">
-                  <span class="product-price">129,- Kč</span>
-                </div>
-              </div>
             </div>
 
-            <div class="product-card product-card-highlight">
-              <div class="product-image">
-                <img src="img3.jpg" alt="" />
-              </div>
-              <div class="product-info">
-                <p class="product-name">
-                  Deftrans Kuchyně Gold zlatý dub/bílá 180 cm
-                </p>
-                <div class="product-discount">
-                  <span class="discount-badge">-1 000 Kč</span>
-                  <span class="old-price">4 499,- Kč</span>
+            <div class="card">
+                <img src="assets/image (1).webp" alt="">
+                <div class="card-info">
+                    <p>Kuchyně Gold</p>
+                    <strong>3 499 Kč</strong>
                 </div>
-                <div class="product-price-box">
-                  <span class="product-price">3 499,- Kč</span>
-                </div>
-              </div>
             </div>
-          </div>
 
-          <div class="promo-banner">
-            <div class="banner-inner">
-              <span class="banner-label">Aktuální leták</span>
-              <div class="banner-image">
-                <img src="letak.jpg" alt="" />
-              </div>
-              <button class="banner-button">Prohlédnout</button>
-            </div>
-          </div>
         </div>
-      </section>
 
-      <section class="section-more">
-        <h2 class="section-title">Teď je ten správný čas!</h2>
-        <div class="more-products"></div>
-      </section>
-    </main>
-  </body>
+        <div class="banner">
+            <p>Aktuální leták</p>
+            <button>Prohlédnout</button>
+        </div>
+
+    </div>
+
+</main>
+
+</body>
 </html>
