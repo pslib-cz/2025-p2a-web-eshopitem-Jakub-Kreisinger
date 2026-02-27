@@ -57,8 +57,35 @@ body {
     text-decoration: none;
     color: black;
     font-weight: bold;
+    position: relative;
 }
 
+.nav a::after {
+    content: "";
+    display: inline-block;
+    width: 2px;
+    height: 100%; 
+    background-color: orange;
+    position: absolute;
+    right: -10px; 
+}
+
+
+.burger-menu {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.burger-menu span {
+    display: block;
+    height: 3px;
+    background-color: black;
+    border-radius: 2px;
+}
 
 
 .main {
@@ -139,6 +166,28 @@ body {
 
 @media (max-width: 600px) {
 
+    .burger-menu {
+        display: flex; 
+        gap: 5px;
+    }
+
+    .nav {
+        display: none; 
+        flex-direction: column;
+        gap: 10px;
+        background-color: white;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        width: 100%;
+        padding: 10px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    .nav.active {
+        display: flex; 
+    }
+
     .header-top {
         grid-template-columns: 1fr;
         gap: 10px;
@@ -148,11 +197,6 @@ body {
     .icons {
         justify-content: center;
         gap: 20px;
-    }
-
-    .nav {
-        flex-direction: column;
-        gap: 10px;
     }
 
     .products {
