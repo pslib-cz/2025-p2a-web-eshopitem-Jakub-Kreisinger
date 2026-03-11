@@ -1,0 +1,52 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+.products {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+
+  grid-auto-rows: auto;
+}
+
+.card {
+  border: 1px solid #ddd;
+  padding: 15px;
+  display: grid;
+
+  grid-template-rows: subgrid;
+  grid-row: span 5;
+
+  background: white;
+}
+
+.card-img {
+  width: 100%;
+  height: 150px;
+  object-fit: contain;
+}
+
+.card-title {
+  font-weight: 700;
+  font-size: 15px;
+}
+
+.card-text {
+  font-size: 13px;
+  color: #555;
+}
+
+.card-price {
+  font-size: 20px;
+  font-weight: 700;
+  color: #ff6a00;
+}
+
+.stars {
+  color: #ff8c00;
+  font-size: 14px;
+}
